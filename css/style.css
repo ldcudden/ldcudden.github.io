@@ -1,0 +1,85 @@
+body {
+	width: 100%;
+}
+
+.border {
+	border: 8px solid white;
+}
+
+
+.tall {
+	height: 496px;
+	background-color: #ccf;
+}
+
+.reg {
+	height: 240px;
+}
+
+.small {
+	height: 112px;
+	background-color: #0ff;
+}
+
+.cover {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.zoe_face {
+	background-image: url("../images/zoe_face.png");
+}
+
+.pout_face {
+	background-image: url("../images/pout_face.jpg");
+}
+
+.ceree {
+	background-image: url("../images/DSC00129.JPG");
+}
+
+.cheese {
+	background-image: url("../images/cheese.jpg");
+}
+
+.cheeks {
+	background-image: url("../images/IMG00005-20100601-1735.jpg");
+}
+
+.heels {
+	background-image: url("../images/heels.jpg");
+}
+
+.cake {
+	background-image: url("../images/DSC00164.JPG");
+}
+
+.play {
+	background-image: url("../images/IMG00006-20111229-1342.jpg");
+}
+
+.daddy1 {
+	background-image: url("../images/feet.JPG");
+}
+
+.daddy2 {
+	background-image: url("../images/funny_face.jpg");
+}
+
+.daddy3 {
+	background-image: url("../images/DSC00923.JPG");
+}
+
+.wave {
+	background-image: url("../images/wave.jpg");
+}
+
+.smile {
+	background-image: url("../images/smile.jpg");
+}
+

@@ -1,7 +1,7 @@
 *, body, div, dl, dt, dd, ul, ol,li, h1,h2,h3,h4,h5,h6,pre,form,input,p,td,img,a,table,address
 {margin: 0; padding: 0;}
 
-h1,h2,h3,h4,h5,h6,li,p,td, address, label
+a,h1,h2,h3,h4,h5,h6,li,p,td, address, label
 {font-size: 12px;}
 
 ol,ul
@@ -14,12 +14,15 @@ address
 img
 {border:0;}
 
-a
+a, a:visited
 {text-decoration: none;}
+
+p a:visited {
+	color: #754848;
+}
 
 body {
 	font-family: "Lucida Sans", Helvectica, sans-serif;
-	background: url("../images/AB_CitySurfaces.jpg") no-repeat -450px 85px;
 }
 
 #top-container {
@@ -30,9 +33,9 @@ body {
 
 header
 {
-	color: #B3B3B3;
+	color: #000;
 	font-weight: lighter;
-	width: 598px;
+	width: 599px;
 	height: 117px;
 	margin: 0 auto;
 }
@@ -55,7 +58,7 @@ h1 a {
 }
 
 header ul {
-	background: url("../images/video.png") no-repeat 0 0;
+	background: url("../images/video.png") no-repeat 50px 0;
 	text-transform: uppercase;
 	float: left;
 	padding: 48px 0 55px 10px;
@@ -71,7 +74,7 @@ header li {
 }
 
 nav a {
-	color: #666;
+	color: #999;
 	padding: 0 30px 20px 10px;
 }
 
@@ -89,66 +92,163 @@ nav a:hover
 }
 
 #middle {
-	background: url("../images/crustry_bkgd.jpg") no-repeat;
+	background: url("../images/timecode_bkgd.jpg") no-repeat;
 	background-size: cover;
 }
 
-.swatch {
-	background-color: rgba(0,0,0,.7);
-}
-
 #main {
-	width: 80%;
-	margin-left: 25%;
+	background-color: rgba(0, 0, 0,.6);
+	width: 100%;
+	margin: -5px auto 0 auto;
 }
 
 .widescreen {
 	width: 100%;
-	margin: 0 auto;
 }
 
-#portfolio_nav {
-	width: 200px;
-	float: left;
+#intro {
+	font-weight: lighter;
+	font-size: 1.1em;
+	color: #999;
+	background-color: rgba(70, 70, 70,.70);
+	width: 120%;
+	margin: 0 auto;
+	position: relative;
+	top: 20px;
+	padding: 12px;
+	box-shadow: 0px 0px 25px rgba(15, 15, 15,.95);
+	-webkit-box-shadow: 0px 0px 25px rgba(15, 15, 15,.95);
+	-moz-box-shadow: 0px 0px 25px rgba(15, 15, 15,.95);
+	border-radius: 5px;
+}
+
+#intro p {
+	font-size: .75em;
+}
+
+#intro a {
+	color: #FC0;
+	font-size: 1em;
+}
+
+.description {
+	color: #ccc;
 }
 
 #portfolio_nav img {
 	margin-right: 10px;
 }
-.arrow {
-	transition-property: transform;
-	transition-duration: .5s;
-	
-	-webkit-transition-property: transform;
-	-webkit-transition-duration: .5s;
+
+.port_menu {
+	cursor: pointer;
+	display: none;
+	width: 173px;
+	margin: 0 auto;
 }
 
-.arrow:hover {
+.port_menu li {
+	height: 83px;
+}
+
+.port_menu ul {
+	margin: 0;
+}
+
+.portImage_bkgd {
+	width: 83px;
+}
+
+.portCategory {
+	cursor: pointer;
+	padding: 5px 0 5px 5px;
+}
+
+.float_right {
+	width: 83px;
+	float: left;
+}
+
+.arrow {
+	transition-property: transform;
+	transition-duration: .2s;
+	
+	-webkit-transition-property: transform;
+	-webkit-transition-duration: .2s;
+}
+
+.over {
 	transform: rotate(90deg);
 	-webkit-transform: rotate(90deg);
 }
 
-.portfoliolinks
-{
+.portfoliolinks {
 	color: #B3B3B3;
 	padding: 8px 0 8px 20px;
-	border-bottom: 1px solid #4D4D4D;
 }
+
+.portCategory:hover
+{
+	background-color: rgba(70, 70, 70,.70);
+	border-radius: 5px;
+}
+
+.grey {
+	background-color: rgba(70, 70, 70,.70);
+	border-radius: 5px;
+}
+
 
 .first-portfolio_link {
 	color: #B3B3B3;
-	padding: 8px 0 8px 37px;
-	border-bottom: 1px solid #4D4D4D;
+	padding: 8px 0 8px 20px;
 }
 
-article {
+.portImage_bkgd  {
+    display:inline-block;
+    max-width:83px; 
+    max-height:83px;
+    background-color:#333;
+}
+
+.portImage {
+    max-width:83px; 
+    max-height:83px;
+    -moz-transition: all 1s; 
+    -webkit-transition: all 1s;  
+    -ms-transition: all 1s;  
+    -o-transition: all 1s;  
+    transition: all 1s; 
+    opacity:0.2;
+    filter:alpha(opacity=20);
+}
+
+.portImage:hover {
+    opacity:1.0;
+    filter:alpha(opacity=100);
+}
+
+article.home_viewer {
+	/*display: block;*/
+	width: 75%;
+	height: 500px;
+	/*margin-left: 325px;*/
+	/*margin: 0 auto;*/
+	/*float: left;*/
+}
+
+article.other {
 	font-weight: lighter;
 	color: #B3B3B3;
 	background-color: rgba(0,0,0,.6);
-	width: 60%;
+	width: 80%;
 	padding: 40px 15px 60px 25px;
 	margin: 0 auto;
-	float: left;
+}
+
+#portfolio_nav {
+	display: block;
+	width: 186px;
+	/*float: left;*/
 }
 
 article h1
@@ -196,6 +296,7 @@ footer ul {
 
 
 .copy {
+	font-size: 12px;
 	width: 160px;
 	float: left;
 	padding: 29px 0 20px 29px;
@@ -219,7 +320,7 @@ footer a:hover {
 
 .social-nav li {
 	float: left;
-	padding-left: 10px;
+	padding-left: 8px;
 }
 
 .social-nav li a {

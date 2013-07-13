@@ -230,7 +230,7 @@ nav a:hover
 article.home_viewer {
 	/*display: block;*/
 	width: 75%;
-	height: 45em;
+	height: 600px;
 	/*margin-left: 325px;*/
 	/*margin: 0 auto;*/
 	/*float: left;*/
@@ -241,7 +241,7 @@ article.other {
 	color: #B3B3B3;
 	background-color: rgba(0,0,0,.6);
 	width: 80%;
-	height: 45em;
+	height: 600px;
 	padding: 40px 15px 60px 25px;
 	margin: 0 auto;
 }

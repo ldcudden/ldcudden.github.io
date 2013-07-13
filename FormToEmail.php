@@ -117,7 +117,7 @@ If you do change it, remove the "/" symbol below and replace with the name of th
 
 */
 
-$continue = "http://ldcudden.github.io";
+$continue = "https://ldcudden.github.io";
 
 /*
 

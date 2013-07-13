@@ -32,30 +32,56 @@
 					<div class="large-7 large-centered columns">
 						<div class="row">
 							<div class="large-12 columns">
-								<article class="other">
-									<h1>Contact</h1>
-									<p>
-									Let's talk...
-									</p>
-
-									<form>
-
-									<label for="name">Name</label><br />
-									<input type="text" id="name" name="name" size="30" /><br />
-
-									<label for="email">Email</label><br />
-									<input type="email" id="email" name="email" size="30" /><br />
-
-									<label for="phone">Phone</label><br />
-									<input type="text" id="phone" name="phone" /><br />
-
-									<label for="message">Message</label><br />
-									<textarea id="message" name="message" rows="10" cols="50"></textarea><br />
-
-									<input type="submit" value="Send" name="email" />
-
-									</form>
-
+							
+									<article class="other">
+										<form method="post" action="http://www.lynnecudden.com/contact/FormToEmail.php">
+											<div class="row">
+												<div class="small-12 columns">
+													<h1>Contact Me</h1>
+												</div>
+											</div>
+											
+											<div class="row">
+												<div class="small-3 columns">
+													<label for="name" class="right inline">Name</label>
+												</div>
+												<div class="small-9 columns">
+													<input type="text" id="name" name="name" placeholder="Your name" />
+												</div>
+											</div>
+										
+											<div class="row">
+												<div class="small-3 columns">
+													<label for="email" class="right inline">Email</label>
+												</div>
+												<div class="small-9 columns">
+													<input type="email" id="email" name="email" placeholder="you@youremail.com" />
+												</div>
+											</div>
+										
+											<div class="row">
+												<div class="small-3 columns">
+													<label for="phone" class="right inline">Phone</label>
+												</div>
+												<div class="small-9 columns">
+													<input type="tel" id="phone" name="phone" placeholder="415-555-0123" />
+												</div>
+											</div>
+										
+											<div class="row">
+												<div class="small-3 columns">
+													<label for="message" class="right inline">Message</label>
+												</div>
+												<div class="small-9 columns">
+													<textarea id="message" name="message"></textarea>
+												</div>
+											</div>
+											<div class="row">
+												<div class="small-12 columns">
+													<input type="submit" value="Send" class="button small right" />
+												</div>
+											</div>	
+										</form>
 									</article>
 							</div>
 						</div>

@@ -189,7 +189,10 @@ nav a:hover
 .portCategory:hover
 {
 	background-color: rgba(70, 70, 70,.70);
-	border-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
 }
 
 .grey {

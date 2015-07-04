@@ -21,6 +21,7 @@ $("#reel .portCategory").click(menuDown);
 $("#Commercial .portCategory").click(menuDown);
 $("#Documentary .portCategory").click(menuDown);
 $("#Wedding .portCategory").click(menuDown);
+$("#Webwork .portCategory").click(menuDown);
 
 function mouseFollow(e) {
 	$("#circle").css('left', e.pageX);

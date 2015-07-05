@@ -18,7 +18,7 @@
 
         <p>
             (480) 555-1212<br />
-            <a href="www.business_site.com">www.business_site.com</a>
+            <a href="index.php">www.business_site.com</a>
         </p>
     </main>
 

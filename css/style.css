@@ -18,7 +18,7 @@ a, a:visited
 {text-decoration: none;}
 
 p a:visited {
-	color: #754848;
+	color: #ff00c2;
 }
 
 body {
@@ -131,8 +131,16 @@ nav a:hover
 	font-size: 1em;
 }
 
+h2.description {
+	font-size: 1.2em;
+}
+
 .description {
 	color: #ccc;
+}
+
+.description a {
+	color: #fc0;
 }
 
 #portfolio_nav img {

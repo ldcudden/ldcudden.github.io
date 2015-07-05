@@ -1,0 +1,314 @@
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.hero {
+    background: radial-gradient(rgba(0, 142, 167, .6), rgba(0, 142, 167, 1)), url('../img/bg.jpg') no-repeat;
+    background-size: cover;
+}
+
+.hero > div {
+    width: 750px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+}
+
+header {
+    height: 150px;
+    position: relative;
+    /*top: 0;
+    left: 0;
+    right: 0;*/
+}
+
+header > a {
+    font: 400 2.3em 'Lobster' serif;
+    color: #fff;
+    text-decoration: none;
+    width: 200px;
+    position: absolute;
+    top:3px;
+    left: 3px;
+    margin: 0;
+}
+
+header form {
+    position: absolute;
+    top:15px;
+    right: 0;
+}
+
+header form input {
+    background-color: rgba(0,0,0, 0);
+    padding-top: 4px;
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 2px;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, .5);
+}
+
+:-moz-placeholder {
+   color: rgba(255, 255, 255, .5);
+}
+
+::-moz-placeholder { 
+   color: rgba(255, 255, 255, .5);
+}
+
+:-ms-input-placeholder {  
+   color: rgba(255, 255, 255, .5);
+}
+
+header form button {
+    background-color: #f93d0a;
+    color: #fff;
+    padding: 6px 3px 2px;
+    border: 0;
+    border-radius: 2px;
+}
+
+nav {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right: 0;
+    border-top: 1px solid rgba(255, 255, 255, .5);
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+nav li {
+    font: 300 'Open Sans';
+    font-size: .75em;
+    display: inline-block;
+    list-style: none;
+    text-transform: uppercase;
+    padding: 12px 26px 10px 0;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.tagline {
+    text-align: center;
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    right: 0;
+}
+
+.tagline h1 {
+    font: 300 1.9em 'Open Sans', sans-serif;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    margin: 0;
+}
+
+.tagline h1 span {
+    font: 700 1em 'Open Sans', sans-serif;
+}
+
+.tagline p {
+    color: #fff;
+    font: 300 .84em 'Open Sans', sans-serif;
+    line-height: 3em;
+}
+
+.primary-content {
+    background-color: #d6e1e7;
+    padding-bottom: 20px;
+}
+
+/*bottom inner container */
+.primary-content > div {
+    width: 750px;
+    margin: 0 auto;
+}
+
+.features-container {
+    text-align: center;
+    /*width: 750px;  redundant */
+}
+
+/*feature boxes*/
+.feature {
+    background-color: #fff;
+    font: 400 .7em 'Open Sans', sans-serif;
+    text-align: center;
+    width: 234px;
+    display: inline-block;
+    transform: translateY(-15px);
+    border-top: 3px solid #f93d0a;
+    margin: 0 4px;
+    box-shadow: 0px 0px 20px -5px #000;
+}
+
+.feed {
+    border-top: 3px solid #81d144;
+}
+
+.sell {
+    border-top: 3px solid #008ad0;
+}
+
+.feature > h4, .feature > p {
+    margin: 10px 0;
+}
+
+.feature button {
+    background-color: #fff;
+    padding: 1px 3px;
+    border-radius: 3px;
+    margin: 8px auto 8px auto;
+}
+
+.feature.raise > button {
+    border: 1px solid #f93d0a;
+    color: #f93d0a;
+}
+
+.feature.feed > button {
+    border: 1px solid #81d144;
+    color: #81d144;
+}
+
+.feature.sell > button {
+    border: 1px solid #008ad0;
+    color: #008ad0;
+}
+
+/*bottom container bkgd*/
+main {
+    background-color: #fff;
+    box-shadow: 0px 0px 20px -5px #000;
+}
+
+.item-list {
+    width: 325px;
+    padding: 8px 10px 0 10px;
+    float: left;
+    overflow: hidden;
+}
+
+/* media objects */
+.item-list > div {
+    background-color: #e7f3f9;
+    height: 64px;
+}
+
+.item-list > * + * {
+    margin-top: 10px;
+}
+
+.item-list > div > div:first-child {
+    background: url('../img/dog1.png');
+    background-size: 64px 64px;
+    width: 64px;
+    height: 64px;
+    float: left;
+}
+
+.item-list > div:nth-child(2) > div:first-child {
+    background: url('../img/dog2.png');
+    background-size: 64px 64px;
+}
+
+.item-list > div:last-child > div:first-child {
+    background: url('../img/dog3.png');
+    background-size: 64px 64px;
+}
+
+.item-list > div > div:last-child {
+    background-color: #e7f3f9;
+    font: 'Open Sans', sans-serif;
+    padding: 0 0 0 5px;
+    margin-left: 64px;
+}
+
+.item-list h5 {
+    font: 300 1em 'Open Sans', sans-serif;
+    color: #2496d0;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.item-list p {
+    font: 400 .8em 'Open Sans', sans-serif;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+/* right area objects */
+aside {
+    padding: 8px 8px 0 8px;
+    margin-left: 325px;
+}
+
+.tile {
+    background-color: #e0efd6;
+    font: 400 .8em 'Open Sans', sans-serif;
+    width: 123px;
+    padding-bottom: 2px;
+    margin: 4px 3px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.tile-aside > div > div:first-child {
+    width: 123px;
+    height: 123px;
+}
+
+.tile-aside > div:first-child > div:first-child {
+    background: url('../img/dog1.png');
+    background-size: 123px;
+}
+
+.tile-aside > div:nth-child(2) > div:first-child {
+    background: url('../img/dog2.png');
+    background-size: 123px;
+}
+
+.tile-aside > div:nth-child(3) > div:first-child {
+background: url('../img/dog3.png');
+    background-size: 123px;
+}
+
+.tile-aside > div:nth-child(4) > div:first-child {
+    background: url('../img/dog2.png');
+    background-size: 123px;
+}
+
+.tile-aside > div:nth-child(5) > div:first-child {
+    background: url('../img/dog3.png');
+    background-size: 123px;
+}
+
+.tile-aside > div:last-child > div:first-child {
+    background: url('../img/dog1.png');
+    background-size: 123px;
+}
+
+.tile p {
+    padding: 0px 0 0 4px;
+    margin: 4px 0 0 0;
+}
+
+.tile h4 {
+    background-color: #84d251;
+    font-weight: 300;
+    color: #4a7926;
+    padding: 0px 0 0 4px;
+    margin: 0;
+}

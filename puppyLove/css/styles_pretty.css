@@ -148,6 +148,8 @@ nav li a {
     text-align: center;
     width: 234px;
     display: inline-block;
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
     transform: translateY(-15px);
     border-top: 3px solid #f93d0a;
     margin: 0 4px;

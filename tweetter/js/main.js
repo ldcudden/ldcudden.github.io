@@ -4,6 +4,7 @@ $(function() {
     //.replies expander
     $(document).on('click','form.compose', function() {
         $(this).addClass('expand');
+        
 
         var text_max = 125;
 
@@ -14,6 +15,16 @@ $(function() {
             var text_remaining = text_max - text_length;
 
             $('.count').html(text_remaining);
+
+            if($(this).val().length >= 100) {
+                $(this).addClass('red');
+                $('.count').addClass('red');
+            }
+            else 
+            {
+                $(this).removeClass('red');
+                $('.count').removeClass('red');
+            }
         });
 
     });

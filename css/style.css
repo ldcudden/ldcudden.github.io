@@ -58,7 +58,7 @@ h1 a {
 }
 
 header ul {
-	background: url("../images/video.png") no-repeat 50px 0;
+	/*background: url("../images/video.png") no-repeat 50px 0;*/
 	text-transform: uppercase;
 	float: left;
 	padding: 48px 0 55px 10px;
@@ -92,12 +92,13 @@ nav a:hover
 }
 
 #middle {
-	background: url("../images/timecode_bkgd.jpg") no-repeat;
-	background-size: cover;
+	background: url("../images/symphony.png");
+	/*background: url("../images/symphony.png") no-repeat;*/
+	/*background-size: cover;*/
 }
 
 #main {
-	background-color: rgba(0, 0, 0,.6);
+	background-color: rgba(82, 0, 82, .7);
 	width: 100%;
 	margin: -5px auto 0 auto;
 }
@@ -110,20 +111,29 @@ nav a:hover
 	font-weight: lighter;
 	font-size: 1.1em;
 	color: #999;
-	background-color: rgba(70, 70, 70,.70);
+	/*background-color: rgba(70, 70, 70,.70);*/
 	width: 120%;
 	margin: 0 auto;
 	position: relative;
 	top: 20px;
 	padding: 12px;
-	box-shadow: 0px 0px 25px rgba(15, 15, 15,.95);
+	/*box-shadow: 0px 0px 25px rgba(15, 15, 15,.95);
 	-webkit-box-shadow: 0px 0px 25px rgba(15, 15, 15,.95);
-	-moz-box-shadow: 0px 0px 25px rgba(15, 15, 15,.95);
+	-moz-box-shadow: 0px 0px 25px rgba(15, 15, 15,.95);*/
 	border-radius: 5px;
 }
 
+#intro h1 {
+	color: #FC0;
+	font-family: 'Zeyada', cursive;
+	font-weight: lighter;
+	font-size: 2.1em;
+	margin-bottom: -18px;
+}
+
 #intro p {
-	font-size: .75em;
+	font-size: .8em;
+	color: #fff;
 }
 
 #intro a {
@@ -194,6 +204,11 @@ h2.description {
 	padding: 8px 0 8px 20px;
 }
 
+
+.portfoliolinks:hover {
+	color: #fff;
+}
+
 .portCategory:hover
 {
 	background-color: rgba(70, 70, 70,.70);
@@ -215,6 +230,10 @@ h2.description {
 .first-portfolio_link {
 	color: #B3B3B3;
 	padding: 8px 0 8px 20px;
+}
+
+.first-portfolio_link:hover {
+	color: #fff;
 }
 
 .portImage_bkgd  {
@@ -252,8 +271,8 @@ article.home_viewer {
 
 article.other {
 	font-weight: lighter;
-	color: #B3B3B3;
-	background-color: rgba(0,0,0,.6);
+	color: #fff;
+	/*background-color: rgba(0,0,0,.6);*/
 	width: 80%;
 	padding: 40px 15px 60px 25px;
 	margin: 0 auto;
@@ -267,7 +286,7 @@ article.other {
 
 article h1
 {
-	color: #933;
+	color: #fc0;
 	font-family: 'Zeyada', cursive;
 	font-weight: lighter;
 	font-size: 2.1em;

@@ -310,10 +310,17 @@ textarea {
 	margin-top: 3px;
 }
 
+/*footer {
+
+}*/
+
 #bottom-container {
 	background-color: #333;
 	color: #B3B3B3;
 	height: 72px;
+	position: fixed;
+	bottom: 0px;
+	left: 0;
 	border-top: 1px solid #4D4D4D;
 }
 

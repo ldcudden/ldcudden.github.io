@@ -283,6 +283,7 @@ article.other {
 #portfolio_nav {
 	display: block;
 	width: 186px;
+	margin-top: 35px;
 	/*float: left;*/
 }
 

@@ -286,8 +286,7 @@ article.other {
 	/*float: left;*/
 }
 
-article h1
-{
+article h1, ul h1 {
 	color: #fc0;
 	font-family: 'Zeyada', cursive;
 	font-weight: lighter;

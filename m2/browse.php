@@ -1,6 +1,6 @@
 <?php
                    
-require_once 'products.php';
+require_once('products.php');
 
 $options = '';
 
@@ -15,7 +15,7 @@ foreach ($items as $item => $os) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta charset="UTF-8">
     <title>Business Site</title>
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,900' rel='stylesheet' type='text/css'>
@@ -24,7 +24,8 @@ foreach ($items as $item => $os) {
 </head>
 <body>
 
-    <?php require_once 'header.php'; ?>
+    <?php 
+    require_once('header.php'); ?>
 
     <main>
         <h1>
@@ -47,7 +48,7 @@ foreach ($items as $item => $os) {
 
     </main>
 
-    <?php require_once 'footer.php'; ?>
+    <?php require_once('footer.php'); ?>
     
 </body>
 </html>

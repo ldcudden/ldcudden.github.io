@@ -1,15 +1,10 @@
 <?php
 
-require_once 'products.php';
+require_once('products.php');
 
 if (isset($_GET['product']) && $_GET['product'] >= 0 && is_numeric($_GET['product'])) {
     $product = $_GET['product'];
 
-// } elseif (!isset$_GET['product']) {
-//     $product = $_GET['product'];
-//     $quantity = $_GET['quantity'];
-//     $output = "Please select a product.";
-// echo $product;
 } else {
 
     exit ('product is invalid');
@@ -50,7 +45,7 @@ if (array_key_exists($product, $items)) {
 </head>
 <body>
 
-    <?php require_once 'header.php'; ?>
+    <?php require_once('header.php'); ?>
 
     <main>
       <h1>
@@ -58,7 +53,7 @@ if (array_key_exists($product, $items)) {
       </h1> 
     </main>
 
-    <?php require_once 'footer.php'; ?>
+    <?php require_once('footer.php'); ?>
 
 </body>
 </html>
